@@ -44,6 +44,7 @@ public class SecurityConfig {
         configuration.addAllowedOrigin("http://localhost:3000"); // Frontend URL
         configuration.addAllowedOrigin("http://localhost:3001"); // Frontend URL (when 3000 is in use)
         configuration.addAllowedOrigin("http://localhost:8080"); // Frontend URL (Vite default)
+        configuration.addAllowedOrigin("https://ucms-frontend.vercel.app"); // Frontend URL (Vite default)
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);
